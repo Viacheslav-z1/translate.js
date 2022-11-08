@@ -25,6 +25,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'app/js/countries.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))

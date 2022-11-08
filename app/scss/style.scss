@@ -4,9 +4,113 @@
 @import 'global';
 
 
+body{
+    // background-color: rgb(201, 174, 20);
+  background: rgb(162, 136, 5);
+    background: linear-gradient(90deg, rgba(162, 136, 5, 1) 0%, rgba(240, 253, 29, 1) 50%, rgba(187, 181, 42, 1) 100%);
+}
 
+.app {
 
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
 
+  
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__item {
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.203);
+    border: none;
+    border-radius: 20px;
+    height: 300px;
+    outline: none;
+    padding: 10px;
+    font-size: 22px;
+    line-height: 25px;
+    resize: none;
+    overflow-y: auto;
+  }
+
+  &__from{
+    &::placeholder{
+      color: black;
+    }
+  }
+
+  &__copy{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__copy-img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  &__from {}
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__btn-sound {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__sound-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+  &__select {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: rgba(0, 0, 0, 0.391);
+    border-radius: 20px;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  &__to{
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.392)
+  }
+
+  &__select-from {}
+}
 
 
 

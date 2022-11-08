@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Перекладач</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+  <main class="app">
+    <div class="container">
+      <h1 class="app__title">
+        Перекладач
+      </h1>
+      <div class="app__inner">
+        <div class="app__item">
+          <h2 class="app__text">Введіть текст для перекладу</h2>
+          <textarea placeholder="Введіть текст" type="text" class="app__input app__from"></textarea>
+          <div class="app__box">
+            <button class="app__btn-sound app__btn-sound__from">
+              <img src="images/volume.svg" alt="sound" class="app__sound-img">
+            </button>
+            <button class="app__copy app__copy-from">
+              <img src="images/copy-regular.svg" alt="copy" class="app__copy-img">
+            </button>
+            <select class="app__select app__select-from" name="select">
+            </select>
+          </div>
+        </div>
+        <div class="app__item">
+          <h2 class="app__text">Ваш текст</h2>
+          <textarea readonly type="text" class="app__input app__to"></textarea>
+          <div class="app__box">
+            <button class="app__btn-sound app__btn-sound__to">
+              <img src="images/volume.svg" alt="sound" class="app__sound-img">
+            </button>
+            <button class="app__copy app__copy-to">
+              <img src="images/copy-regular.svg" alt="copy" class="app__copy-img">
+            </button>
+            <select class="app__select app__select-to" name="select">
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
