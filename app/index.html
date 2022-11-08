@@ -19,7 +19,12 @@
       <div class="app__inner">
         <div class="app__item">
           <h2 class="app__text">Введіть текст для перекладу</h2>
-          <textarea placeholder="Введіть текст" type="text" class="app__input app__from"></textarea>
+          <div class="app__input-box">
+            <textarea placeholder="Введіть текст" type="text" class="app__input app__from"></textarea>
+            <button class="app__paste">
+              Вставити
+            </button>
+          </div>
           <div class="app__box">
             <button class="app__btn-sound app__btn-sound__from">
               <img src="images/volume.svg" alt="sound" class="app__sound-img">
@@ -33,7 +38,10 @@
         </div>
         <div class="app__item">
           <h2 class="app__text">Ваш текст</h2>
-          <textarea readonly type="text" class="app__input app__to"></textarea>
+          <div class="app__input-box">
+            <div class="spinner"></div>
+            <textarea readonly type="text" class="app__input app__to"></textarea>
+          </div>
           <div class="app__box">
             <button class="app__btn-sound app__btn-sound__to">
               <img src="images/volume.svg" alt="sound" class="app__sound-img">

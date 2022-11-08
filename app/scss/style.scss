@@ -109,10 +109,105 @@ body{
     background-color: rgba(0, 0, 0, 0.392)
   }
 
+  &__input-box{
+    position: relative;
+  }
+
+  &__paste{
+    background-color: transparent;
+    display: none;
+    border: none;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    z-index: 5;
+    cursor: pointer;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      right: 50%;
+      width: 15px;
+      height: 15px;
+      transform: translateX(50%) rotate(45deg);
+      background-color: aliceblue;
+      border-radius: 3px;
+      z-index: -1;
+    }
+  }
+
   &__select-from {}
 }
 
 
+.spinner {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
 
+.spinner:after {
+  animation: changeContent .8s linear infinite;
+  display: block;
+  content: "⠋";
+  font-size: 80px;
+}
+
+@keyframes changeContent {
+  10% {
+    content: "⠙";
+  }
+
+  20% {
+    content: "⠹";
+  }
+
+  30% {
+    content: "⠸";
+  }
+
+  40% {
+    content: "⠼";
+  }
+
+  50% {
+    content: "⠴";
+  }
+
+  60% {
+    content: "⠦";
+  }
+
+  70% {
+    content: "⠧";
+  }
+
+  80% {
+    content: "⠇";
+  }
+
+  90% {
+    content: "⠏";
+  }
+}
+
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
 
 @import 'media';
